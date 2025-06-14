@@ -10,7 +10,7 @@ int main() {
         return 1;
     }
 
-    fichier << "x,y\n";  // BON saut de ligne
+    fichier << "x,y\n";  
 
     double x_min = -2.0;
     double x_max = 2.0;
@@ -18,7 +18,7 @@ int main() {
 
     for (double x = x_min; x <= x_max; x += pas) {
         double y = std::exp(x);
-        fichier << std::fixed << std::setprecision(4) << x << "," << y << "\n"; // BON saut de ligne
+        fichier << std::fixed << std::setprecision(4) << x << "," << y << "\n"; 
     }
 
     fichier.close();
